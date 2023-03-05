@@ -2,7 +2,12 @@
 // Calculates mean squared error of my sqrt calculations by squaring and comparing to the original number
 // I did not make this to shit on rust at all btw, I just wanted to test out less accurate sqrt functions to see
 // the difference in speed and used rust in order to get more practice
+// NOTE -- According to exo, rust stdlib sqrt takes advantage of hardware square root instructions. No way im beating that gg
 // RESULTS: my implementation of the babylonian method was much slower and much less accurate
+// TODO: change arrays to vectors to allow for larger trial sizes
+//       add more approximation methods
+//       to run use --release for more accurate benchmarking
+
 use rand::Rng;
 use std::{time::Instant};
 
